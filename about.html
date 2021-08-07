@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="/pages/products.html">Products</a>
+        </li>
+        <li>
+            <a href="/pages/orders.html">Orders</a>
+        </li>
+        <li>
+            <a href="/about.html">About</a>
+        </li>
+    </ul>
+    <h1>About</h1>
+    <!--Relatív URL(egy mappában lévő fájlok "index.html")
+        Abszolút URL(teljes elérés megadása "https://...")
+    ROOT URL:(domain utén közvetlenöl következő oldal "/index.html")-->
+
+    <table>
+        <!--Táblázat leírása/címe-->
+        <caption>Opening hours</caption>
+        <!--Táblázat fejléce(Table header)-->
+        <thead>
+            <tr>
+                <!--Táblázat fejléce cellák(Table header)-->
+                <th>Day</th>
+                <th>Open</th>
+                <th>Close</th>
+            </tr>
+        </thead>
+
+        <!--Táblázat teste(Ha van header, akkor kötelező a body is!)-->
+        <tbody>
+            <!--Táblázat sorai(Table row)-->
+            <tr>
+                <!--Táblázat cellái(Table Data)-->
+                <td>Monday - Friday</td>
+                <td>09:00</td>
+                <!--Táblázat sorainak eggyesítése - a cella 2 sor magas lett.-->
+                <td rowspan="2">21:00</td>
+            </tr>
+
+            <tr>
+                <td>Saturday</td>
+                <td>10:00</td>
+            </tr>
+
+            <tr>
+                <!--Táblázat oszlopainak eggyesítése - a cella 2 oszlop széles lett.-->
+                <td>Sunday</td>
+                <td colspan="2">Closed</td>
+            </tr>
+        </tbody>
+
+        <!--Táblázat lábléc, fontos a formátum követése, a megjelenés miatt.-->
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    &copy; 2019
+                </td>
+            </tr>
+
+        </tfoot>
+    </table>
+</body>
+
+</html>
